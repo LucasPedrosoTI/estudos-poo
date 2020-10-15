@@ -11,18 +11,18 @@
   </parent>
 
   <groupId>com.gft</groupId>
-  <artifactId>exercicio1</artifactId>
+  <artifactId>exercicioUm</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>exercicio 1 para o treinamento GFT</description>
-  <url>https://bitbucket.org/byuhbll/exercicio1</url>
+  <url>https://bitbucket.org/byuhbll/exercicioUm</url>
   
   <scm>
-    <connection>scm:git:git://bitbucket.org/byuhbll/exercicio1.git</connection>
-    <developerConnection>scm:git:ssh://bitbucket.org:byuhbll/exercicio1.git</developerConnection>
-    <url>https://bitbucket.org/byuhbll/exercicio1</url>
+    <connection>scm:git:git://bitbucket.org/byuhbll/exercicioUm.git</connection>
+    <developerConnection>scm:git:ssh://bitbucket.org:byuhbll/exercicioUm.git</developerConnection>
+    <url>https://bitbucket.org/byuhbll/exercicioUm</url>
   </scm>
 
   <dependencies>
