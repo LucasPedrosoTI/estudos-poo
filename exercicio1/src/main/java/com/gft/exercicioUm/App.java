@@ -15,11 +15,11 @@ public class App {
 
         veiculo.abastecer(30);
 
-        System.out.println("Fuel " + veiculo.getLitrosCombustivel());
+        System.out.println("Tanque: " + veiculo.getLitrosCombustivel());
 
         veiculo.abastecer(30);
 
-        System.out.println("2nd fuel " + veiculo.getLitrosCombustivel());
+        System.out.println("Tanque: " + veiculo.getLitrosCombustivel());
 
         veiculo.frear();
 
