@@ -12,9 +12,7 @@ public class VideoGame extends Produto implements Imposto {
   }
 
   public VideoGame(String nome, double preco, int qtd, String marca, String modelo, boolean isUsado) {
-    this.nome = nome;
-    this.preco = preco;
-    this.qtd = qtd;
+    super(nome, preco, qtd);
     this.marca = marca;
     this.modelo = modelo;
     this.isUsado = isUsado;
@@ -57,9 +55,10 @@ public class VideoGame extends Produto implements Imposto {
   @Override
   public void calculaImposto() {
     if (isUsado) {
-      System.out.println("Imposto " + this.nome + espaco + this.modelo + espaco + "usado, R$ " + this.preco * 0.25);
+      System.out
+          .println("Imposto " + this.getNome() + espaco + this.modelo + espaco + "usado, R$ " + this.getPreco() * 0.25);
     } else {
-      System.out.println("Imposto " + this.nome + espaco + this.modelo + espaco + " R$ " + this.preco * 0.45);
+      System.out.println("Imposto " + this.getNome() + espaco + this.modelo + espaco + " R$ " + this.getPreco() * 0.45);
     }
   }
 

@@ -11,11 +11,11 @@ public class Loja {
   public void listarLivros() {
     System.out.println("----------------------------------------");
     if (this.livros.size() <= 0) {
-      System.out.println("A loja não tem livros no seu estoque");
+      System.out.println("A loja nao tem livros no seu estoque");
     } else {
       System.out.println("A loja " + this.nome + " possui estes livros para venda:");
       for (Livro livro : livros) {
-        System.out.println("Titulo: " + livro.getNome() + ", preço: " + livro.getPreco() + ", quantidade: "
+        System.out.println("Titulo: " + livro.getNome() + ", preco: " + livro.getPreco() + ", quantidade: "
             + livro.getQtd() + " em estoque.");
       }
     }
@@ -28,7 +28,7 @@ public class Loja {
     } else {
       System.out.println("A loja " + this.nome + " possui estes video-games para venda:");
       for (VideoGame videogame : videoGames) {
-        System.out.println("Titulo: " + videogame.getNome() + ", preço: " + videogame.getPreco() + ", quantidade: "
+        System.out.println("Titulo: " + videogame.getNome() + ", preco: " + videogame.getPreco() + ", quantidade: "
             + videogame.getQtd() + " em estoque.");
       }
     }
@@ -50,7 +50,7 @@ public class Loja {
     patrimonio = totalLivros + totalVideoGames;
 
     System.out.println("----------------------------------------");
-    System.out.println("O patrimônio da loja " + this.nome + " é de R$ " + patrimonio);
+    System.out.println("O patrimonio da loja " + this.nome + " é de R$ " + patrimonio);
   }
 
   public Loja() {

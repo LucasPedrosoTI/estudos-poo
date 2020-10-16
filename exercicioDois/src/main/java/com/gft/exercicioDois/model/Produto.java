@@ -1,9 +1,9 @@
 package main.java.com.gft.exercicioDois.model;
 
 abstract public class Produto {
-  protected String nome;
-  protected double preco;
-  protected int qtd;
+  private String nome;
+  private double preco;
+  private int qtd;
 
   public Produto() {
   }
