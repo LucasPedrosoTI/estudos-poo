@@ -1,13 +1,13 @@
 package model;
 
 public abstract class Personagem {
-  protected String nome;
-  protected int vida;
-  protected int mana;
-  protected float xp;
-  protected int inteligencia;
-  protected int forca;
-  protected int level;
+  private String nome;
+  private int vida;
+  private int mana;
+  private float xp;
+  private int inteligencia;
+  private int forca;
+  private int level;
   private static int counter;
 
   abstract protected void lvlUp();
@@ -65,6 +65,14 @@ public abstract class Personagem {
 
   public void setXp(float xp) {
     this.xp = xp;
+  }
+
+  public int getInteligencia() {
+    return this.inteligencia;
+  }
+
+  public void setInteligencia(int inteligencia) {
+    this.inteligencia = inteligencia;
   }
 
   public int getForca() {

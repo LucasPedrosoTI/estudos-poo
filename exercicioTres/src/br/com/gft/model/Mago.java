@@ -10,19 +10,17 @@ public class Mago extends Personagem {
 
   @Override
   public void lvlUp() {
-    this.level += 1;
-
-    this.forca += 5;
-    this.vida += 5;
-
-    this.mana += 10;
-    this.inteligencia += 10;
+    this.setLevel(this.getLevel() + 1);
+    this.setForca(this.getForca() + 5);
+    this.setVida(this.getVida() + 5);
+    this.setMana(this.getMana() + 10);
+    this.setInteligencia(this.getInteligencia() + 10);
   }
 
   @Override
   public void attack() {
-    double dano = (this.inteligencia * this.level) + Utils.gerarNumeroRandomico();
-    System.out.println("O Mago " + this.nome + " solta magia e infringe dano de " + dano);
+    double dano = (this.getInteligencia() * this.getLevel()) + Utils.gerarNumeroRandomico();
+    System.out.println("O Mago " + this.getNome() + " solta magia e infringe dano de " + dano);
   }
 
   public void aprenderMagia(String magia) {

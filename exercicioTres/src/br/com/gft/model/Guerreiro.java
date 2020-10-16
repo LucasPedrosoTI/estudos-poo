@@ -10,19 +10,18 @@ public class Guerreiro extends Personagem {
 
   @Override
   public void lvlUp() {
-    this.level += 1;
+    this.setLevel(this.getLevel() + 1);
 
-    this.forca += 10;
-    this.vida += 10;
-
-    this.mana += 5;
-    this.inteligencia += 5;
+    this.setForca(this.getForca() + 10);
+    this.setVida(this.getVida() + 10);
+    this.setMana(this.getMana() + 5);
+    this.setInteligencia(this.getInteligencia() + 5);
   }
 
   @Override
   public void attack() {
-    double dano = (this.forca * this.level) + Utils.gerarNumeroRandomico();
-    System.out.println("O Guerreiro " + this.nome + " usa habilidade e infringe dano de " + dano);
+    double dano = (this.getForca() * this.getLevel()) + Utils.gerarNumeroRandomico();
+    System.out.println("O Guerreiro " + this.getNome() + " usa habilidade e infringe dano de " + dano);
   }
 
   public void aprenderHabilidade(String habilidade) {
