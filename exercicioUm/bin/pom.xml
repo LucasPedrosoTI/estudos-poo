@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>edu.byu.hbll</groupId>
+    <artifactId>java-pom</artifactId>
+    <version>1.5.3</version>
+  </parent>
+
+  <groupId>com.gft</groupId>
+  <artifactId>exercicioUm</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>exercicio 1 para o treinamento GFT</description>
+  <url>https://bitbucket.org/byuhbll/exercicioUm</url>
+  
+  <scm>
+    <connection>scm:git:git://bitbucket.org/byuhbll/exercicioUm.git</connection>
+    <developerConnection>scm:git:ssh://bitbucket.org:byuhbll/exercicioUm.git</developerConnection>
+    <url>https://bitbucket.org/byuhbll/exercicioUm</url>
+  </scm>
+
+  <dependencies>
+
+  </dependencies>
+
+</project>

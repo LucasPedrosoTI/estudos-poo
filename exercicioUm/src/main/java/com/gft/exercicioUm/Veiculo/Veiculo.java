@@ -12,11 +12,19 @@ public class Veiculo {
 	private int velocidade;
 	private Double preco;
 
-	public void acelerar() {
+	public void acelerar() throws Exception {
+		if (!isLigado) {
+			throw new Exception("O carro precisa estar ligado para acelerar");
+		}
+		
 		this.velocidade += 20;
 	}
 
 	public void abastecer(int combustivel) throws Exception {
+		if(isLigado) {
+			throw new Exception("O carro precisa estar desligado para abastecer");
+		}
+		
 		if (this.litrosCombustivel + combustivel > 60) {
 			throw new Exception("A capacidade máxima do tanque é 60 litros. Não é possível abastecer.");
 		}
