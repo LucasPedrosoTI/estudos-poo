@@ -14,8 +14,8 @@ public class Pessoa {
     if (pessoas.size() <= 0)
       throw new Exception("Não há pessoas na lista");
 
-    Comparator<Pessoa> comparator = comparing(Pessoa::getIdade, reverseOrder());
-    Pessoa pessoaMaisVelha = pessoas.stream().sorted(comparator).collect(Collectors.toList()).get(0);
+    Comparator<Pessoa> compareByIdadeDesc = comparing(Pessoa::getIdade, reverseOrder());
+    Pessoa pessoaMaisVelha = pessoas.stream().sorted(compareByIdadeDesc).collect(Collectors.toList()).get(0);
 
     // for (Pessoa pessoa : pessoas) {
     // if (pessoa.getIdade() > pessoaMaisVelha.getIdade()) {
@@ -53,6 +53,10 @@ public class Pessoa {
 
   public void setIdade(int idade) {
     this.idade = idade;
+  }
+
+  public boolean byMaiores() {
+    return this.idade >= 18;
   }
 
   @Override
