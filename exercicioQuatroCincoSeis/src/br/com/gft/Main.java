@@ -23,9 +23,10 @@ public class Main {
 
     System.out.println("Qtd pessoas: " + pessoas.size());
 
-    pessoas = pessoas.stream().filter(pessoa -> pessoa.getIdade() >= 18).collect(Collectors.toList());
+    List<Pessoa> pessoasMaiores = pessoas.stream().filter(pessoa -> pessoa.getIdade() >= 18)
+        .collect(Collectors.toList());
 
-    System.out.println("Qtd maiores: " + pessoas.size());
+    System.out.println("Qtd maiores: " + pessoasMaiores.size());
 
     for (Pessoa pessoa : pessoas) {
       if (pessoa.getNome().equals("Jessica")) {
