@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="exercicioDois/src"/>
+	<classpathentry kind="src" path="exercicioQuatroCincoSeis/src/br/com/gft"/>
+	<classpathentry kind="src" path="exercicioSete/src"/>
+	<classpathentry kind="src" path="exercicioTres/src/br/com/gft"/>
+	<classpathentry kind="src" path="tdd-poo-loja/src/main/java"/>
+	<classpathentry kind="src" path="tdd-poo-loja/src/test/java"/>
+	<classpathentry kind="src" path="tdd-poo-veiculo/src/main/java"/>
+	<classpathentry kind="src" path="tdd-poo-veiculo/src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="exercicioDois/bin"/>
+</classpath>
