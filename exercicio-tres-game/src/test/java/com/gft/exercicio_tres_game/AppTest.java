@@ -1,5 +1,6 @@
 package com.gft.exercicio_tres_game;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.ByteArrayOutputStream;
@@ -41,6 +42,11 @@ public class AppTest {
 	public void restoreStreams() {
 		System.setOut(originalOut);
 		System.setErr(originalErr);
+	}
+	
+	@Test
+	void mainDeveRodar() throws Exception {
+		assertDoesNotThrow(() -> App.main(null));
 	}
 
 	@Test
